@@ -51,7 +51,7 @@ Funções de ativação concluidas:
 - [RNA.fn.Pipe]()
 
 ---
-### Separei dois exemplos de uso:
+### SExemplos práticos:
 - [Exemplo 1]() ~ Rede sem o uso de grupamentos internos.
 - [Exemplo 2]() ~ Demonstração das funções de agrupamento.
 
