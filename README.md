@@ -53,7 +53,7 @@ Funções de ativação concluidas:
 - [RNA.fn.Pipe](/RNA/index.js#L20)
 
 ---
-### SExemplos práticos:
+### Exemplos práticos:
 - [Exemplo 1](/exemplo-1.js) ~ Rede sem o uso de grupamentos internos.
 - [Exemplo 2](/exemplo-2.js) ~ Demonstração das funções de agrupamento.
 
