@@ -52,4 +52,6 @@ Funções de ativação concluidas:
 ---
 ### Separei dois exemplos de uso:
 - [Exemplo 1]() ~ Rede sem o uso de grupamentos internos.
-- [Exemplo 2]() ~ Demonstração das funções de agruupamento.
+- [Exemplo 2]() ~ Demonstração das funções de agrupamento.
+
+##### Obrigado pela atençãp!
