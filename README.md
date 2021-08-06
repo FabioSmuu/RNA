@@ -52,7 +52,7 @@ Funções de ativação concluidas:
 
 ---
 ### SExemplos práticos:
-- [Exemplo 1]() ~ Rede sem o uso de grupamentos internos.
-- [Exemplo 2]() ~ Demonstração das funções de agrupamento.
+- [Exemplo 1](/exemplo-1.js) ~ Rede sem o uso de grupamentos internos.
+- [Exemplo 2](/exemplo-2.js) ~ Demonstração das funções de agrupamento.
 
 ##### Obrigado pela atençãp!
