@@ -2,11 +2,10 @@
 
 [![N|Solid](https://cdn.discordapp.com/attachments/631607183301148672/724397007170568313/paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=fabinhoec2210@gmail.com&item_name=F%C3%A1bio&currency_code=BRL)  [![N|Solid](https://cdn.discordapp.com/attachments/631607183301148672/724397005543178270/picpay.png)](https://app.picpay.com/user/smuu)
 
-> Evitei class apenas por ser uma syntax sugar da qual não vejo necessidade de uso.
-
 > Este modulo se trata de uma "forma prática" de criar uma RNA de forma simples e rápida usando javascript puro.
 > Ainda não possui uma estrutura ou conversão de dataset usados em frameworks famoso, mas pretendo desenvolver.
 
+> Evitei class apenas por ser uma syntax sugar da qual não vejo necessidade de uso.
 
 #### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)]() ~ Cria um objeto representando um neurônio.
