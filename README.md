@@ -5,30 +5,51 @@
 > Este modulo se trata de uma "forma prática" de criar uma RNA de forma simples e rápida usando javascript puro.
 > Ainda não possui uma estrutura ou conversão de dataset usados em frameworks famoso, mas pretendo desenvolver.
 
-### Funções para a criação da Rede:
+
+#### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)]() ~ Cria um objeto representando um neurônio.
 - [RNA.neuronios(\<array de entradas>, quantia)]() ~ Cria uma camada de neurônios de mesma entrada.
 - [RNA.setPesos(\<array de neuronios>, \<array de pesos>)]() ~ Rescreve os pesos da cama especifica.
-- [RNA.saidas(\<array de neuronios>, \<callback ou função>, quantia)]() ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
+- [RNA.saidas(\<array de neuronios>, \<callback ou função de ativação>, quantia)]() ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
 - [RNA.genConcat(\<spreed de neuronios>)]() ~ Concatena os pesos para gerar o genoma.
 
-### Funções para a manipulação de genoma:
+
+#### Funções para a manipulação de genoma:
 - [RNA.crossover(\<array de pesos>, \<array de pesos>, indice de deslocamento)]() ~ Junta dois genomas resultando em genomas semelhantes.
 - [RNA.mutar(\<array de pesos>, quantia de mutação)]() ~ Altera uma quantia desejada de pesos em um genoma.
 - [RNA.Softmax(\<array de pesos>)]() ~ Faz o tratamento do genoma para "treinar a rede".
 
 
+#### Objeto neuronio:
+- [Vies]() ~ Valor equivalente a bias.
+- [Pesos]() ~ \<array de pesos>.
+- [Saida]() ~ \<callback referente a função de ativação>.
 
-```js
-module.exports.info = {
-    cmd: ['exemplo', 'e'] //Irá funcionar usando prefixo + nome  (!exemplo ou !e)
-}
+---
 
-module.exports.comando = (bot, msg, args) => {
-    //Aqui é onde ocorre a magica, pois, tudo o que for criado neste bloco será executado ao chamar o comando.
-}
-```
+Funções de ativação concluidas:
+> As derivadas ainda estão em desenvolvimento.
+- [ArcTan]()
+- [BentIdentity]()
+- [BinaryStep]()
+- [Gaussian]()
+- [Identity]()
+- [LeakyReLU]()
+- [ReLU]()
+- [SELU]()
+- [Sigmoid]()
+- [SigmoidRcional]()
+- [SiLU]()
+- [Sinc]()
+- [Sinusoid]()
+- [SoftSign]()
+- [SoftPlus]()
+- [TanH]()
+- [PReLU]()
+- [ELU]()
+- [Pipe]()
 
-
-**Obrigado pela sua atenção!**
-	
+---
+### Separei dois exemplos de uso:
+- [Exemplo 1]() ~ Rede sem o uso de grupamentos internos.
+- [Exemplo 2]() ~ Demonstração das funções de agruupamento.
