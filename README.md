@@ -17,7 +17,7 @@
 
 #### Funções para a manipulação de genoma:
 - [RNA.crossover(\<array de pesos>, \<array de pesos>, indice de deslocamento)](/RNA/index.js#L74) ~ Junta dois genomas resultando em genomas semelhantes.
-- [RNA.mutar(\<array de pesos>, quantia de mutação)](/RNA/index.js#L64) ~ Altera uma quantia desejada de pesos em um genoma.
+- [RNA.mutar(\<array de pesos>, quantia de mutação)](/RNA/index.js#L65) ~ Altera uma quantia desejada de pesos em um genoma.
 - [RNA.Softmax(\<array de pesos>)](/RNA/index.js#L40) ~ Faz o tratamento do genoma para "treinar a rede".
 
 
