@@ -7,6 +7,8 @@
 
 > Evitei class apenas por ser uma syntax sugar da qual não vejo necessidade de uso.
 
+Este modulo foi desenvolvido para um teste de [AP](https://www.facebook.com/watch/?v=889808384919613)(Aprendizado de máquina) na game engine Construct. 
+
 #### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)](/RNA/index.js#L45) ~ Cria um objeto representando um neurônio.
 - [RNA.neuronios(\<array de entradas>, quantia)](/RNA/index.js#L79) ~ Cria uma camada de neurônios de mesma entrada.
@@ -54,5 +56,6 @@ Funções de ativação concluidas:
 ### SExemplos práticos:
 - [Exemplo 1](/exemplo-1.js) ~ Rede sem o uso de grupamentos internos.
 - [Exemplo 2](/exemplo-2.js) ~ Demonstração das funções de agrupamento.
+
 
 ##### Obrigado pela atençãp!
