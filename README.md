@@ -7,7 +7,7 @@
 
 > Evitei class apenas por ser uma syntax sugar da qual não vejo necessidade de uso.
 
-Este modulo foi desenvolvido para um teste de [AP](https://www.facebook.com/watch/?v=889808384919613)(Aprendizado de máquina) na game engine Construct. 
+Este modulo foi desenvolvido para um [teste de AP(Aprendizado de máquina)  na game engine Construct](https://www.facebook.com/watch/?v=889808384919613).
 
 #### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)](/RNA/index.js#L45) ~ Cria um objeto representando um neurônio.
