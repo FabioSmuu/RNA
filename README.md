@@ -8,47 +8,47 @@
 > Evitei class apenas por ser uma syntax sugar da qual não vejo necessidade de uso.
 
 #### Funções para a criação da Rede:
-- [RNA.entradas(\<array de entradas>)]() ~ Cria um objeto representando um neurônio.
-- [RNA.neuronios(\<array de entradas>, quantia)]() ~ Cria uma camada de neurônios de mesma entrada.
-- [RNA.setPesos(\<array de neuronios>, \<array de pesos>)]() ~ Rescreve os pesos da cama especifica.
-- [RNA.saidas(\<array de neuronios>, \<callback ou função de ativação>, quantia)]() ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
-- [RNA.genConcat(\<spreed de neuronios>)]() ~ Concatena os pesos para gerar o genoma.
+- [RNA.entradas(\<array de entradas>)](/RNA/index.js#L45) ~ Cria um objeto representando um neurônio.
+- [RNA.neuronios(\<array de entradas>, quantia)](/RNA/index.js#L79) ~ Cria uma camada de neurônios de mesma entrada.
+- [RNA.setPesos(\<array de neuronios>, \<array de pesos>)](/RNA/index.js#L84) ~ Rescreve os pesos da cama especifica.
+- [RNA.saidas(\<array de neuronios>, \<callback ou função de ativação>, quantia)](/RNA/index.js#L80) ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
+- [RNA.genConcat(\<spreed de neuronios>)](/RNA/index.js#L87) ~ Concatena os pesos para gerar o genoma.
 
 
 #### Funções para a manipulação de genoma:
-- [RNA.crossover(\<array de pesos>, \<array de pesos>, indice de deslocamento)]() ~ Junta dois genomas resultando em genomas semelhantes.
-- [RNA.mutar(\<array de pesos>, quantia de mutação)]() ~ Altera uma quantia desejada de pesos em um genoma.
-- [RNA.Softmax(\<array de pesos>)]() ~ Faz o tratamento do genoma para "treinar a rede".
+- [RNA.crossover(\<array de pesos>, \<array de pesos>, indice de deslocamento)](/RNA/index.js#L74) ~ Junta dois genomas resultando em genomas semelhantes.
+- [RNA.mutar(\<array de pesos>, quantia de mutação)](/RNA/index.js#L64) ~ Altera uma quantia desejada de pesos em um genoma.
+- [RNA.Softmax(\<array de pesos>)](/RNA/index.js#L40) ~ Faz o tratamento do genoma para "treinar a rede".
 
 
 #### Objeto neuronio:
-- [Vies]() ~ Valor equivalente a bias.
-- [Pesos]() ~ \<array de pesos>.
-- [Saida]() ~ \<callback referente a função de ativação>.
+- [Vies](/RNA/index.js#L49) ~ Valor equivalente a bias.
+- [Pesos](/RNA/index.js#L53) ~ \<array de pesos>.
+- [Saida](/RNA/index.js#L57) ~ \<callback referente a função de ativação>.
 
 ---
 
 Funções de ativação concluidas:
 > Neste projeto só possui funções de ativação sem suas derivaras.
-- [RNA.fn.ArcTan]()
-- [RNA.fn.BentIdentity]()
-- [RNA.fn.BinaryStep]()
-- [RNA.fn.Gaussian]()
-- [RNA.fn.Identity]()
-- [RNA.fn.LeakyReLU]()
-- [RNA.fn.ReLU]()
-- [RNA.fn.SELU]()
-- [RNA.fn.Sigmoid]()
-- [RNA.fn.SigmoidRcional]()
-- [RNA.fn.SiLU]()
-- [RNA.fn.Sinc]()
-- [RNA.fn.Sinusoid]()
-- [RNA.fn.SoftSign]()
-- [RNA.fn.SoftPlus]()
-- [RNA.fn.TanH]()
-- [RNA.fn.PReLU]()
-- [RNA.fn.ELU]()
-- [RNA.fn.Pipe]()
+- [RNA.fn.ArcTan](/RNA/index.js#L)
+- [RNA.fn.BentIdentity](/RNA/index.js#L)
+- [RNA.fn.BinaryStep](/RNA/index.js#L)
+- [RNA.fn.Gaussian](/RNA/index.js#L)
+- [RNA.fn.Identity](/RNA/index.js#L)
+- [RNA.fn.LeakyReLU](/RNA/index.js#L)
+- [RNA.fn.ReLU](/RNA/index.js#L)
+- [RNA.fn.SELU](/RNA/index.js#L)
+- [RNA.fn.Sigmoid](/RNA/index.js#L)
+- [RNA.fn.SigmoidRcional](/RNA/index.js#L)
+- [RNA.fn.SiLU](/RNA/index.js#L)
+- [RNA.fn.Sinc](/RNA/index.js#L)
+- [RNA.fn.Sinusoid](/RNA/index.js#L)
+- [RNA.fn.SoftSign](/RNA/index.js#L)
+- [RNA.fn.SoftPlus](/RNA/index.js#L)
+- [RNA.fn.TanH](/RNA/index.js#L)
+- [RNA.fn.PReLU](/RNA/index.js#L)
+- [RNA.fn.ELU](/RNA/index.js#L)
+- [RNA.fn.Pipe](/RNA/index.js#L)
 
 ---
 ### SExemplos práticos:
