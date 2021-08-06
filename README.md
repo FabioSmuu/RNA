@@ -28,26 +28,26 @@
 ---
 
 Funções de ativação concluidas:
-> As derivadas ainda estão em desenvolvimento.
-- [ArcTan]()
-- [BentIdentity]()
-- [BinaryStep]()
-- [Gaussian]()
-- [Identity]()
-- [LeakyReLU]()
-- [ReLU]()
-- [SELU]()
-- [Sigmoid]()
-- [SigmoidRcional]()
-- [SiLU]()
-- [Sinc]()
-- [Sinusoid]()
-- [SoftSign]()
-- [SoftPlus]()
-- [TanH]()
-- [PReLU]()
-- [ELU]()
-- [Pipe]()
+> Neste projeto só possui funções de ativação sem suas derivaras.
+- [RNA.fn.ArcTan]()
+- [RNA.fn.BentIdentity]()
+- [RNA.fn.BinaryStep]()
+- [RNA.fn.Gaussian]()
+- [RNA.fn.Identity]()
+- [RNA.fn.LeakyReLU]()
+- [RNA.fn.ReLU]()
+- [RNA.fn.SELU]()
+- [RNA.fn.Sigmoid]()
+- [RNA.fn.SigmoidRcional]()
+- [RNA.fn.SiLU]()
+- [RNA.fn.Sinc]()
+- [RNA.fn.Sinusoid]()
+- [RNA.fn.SoftSign]()
+- [RNA.fn.SoftPlus]()
+- [RNA.fn.TanH]()
+- [RNA.fn.PReLU]()
+- [RNA.fn.ELU]()
+- [RNA.fn.Pipe]()
 
 ---
 ### Separei dois exemplos de uso:
