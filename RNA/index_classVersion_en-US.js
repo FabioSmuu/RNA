@@ -33,6 +33,10 @@ class RNA {
             .reduce((acc, current) => acc.concat(current))
             .reduce((acc, current) => acc.concat(current))
     }
+
+    splitGen(genome, neuronCount, inputCount) {
+        return Array(neuronCount).fill().map(_ => genome.splice(0, inputCount)) 
+    }
 }
 
 class Neuron extends RNA {
@@ -58,10 +62,8 @@ class Neuron extends RNA {
         this._weight = value || [0]
     }
 
-    output(callback) {
-        const result = this.calc(this._weight, this._inputs, this._bias)
-        if (!callback) return result
-        return callback instanceof Function && callback(result)
+    output(callback = value => value) {
+        return callback(this.calc(this._weight, this._inputs, this._bias))
     }
 }
 
