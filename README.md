@@ -9,6 +9,8 @@
 
 Este modulo foi desenvolvido para um [teste de AM(Aprendizado de máquina) na game engine Construct](https://www.facebook.com/watch/?v=889808384919613).
 
+Aqueles que preferirem, agora este modulo possui uma [index_classVersion](/RNA/index_classVersion.js).
+
 #### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)](/RNA/index.js#L45) ~ Cria um objeto representando um neurônio.
 - [RNA.neuronios(\<array de entradas>, quantia)](/RNA/index.js#L79) ~ Cria uma camada de neurônios de mesma entrada.
