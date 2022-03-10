@@ -33,6 +33,10 @@ class RNA {
             .reduce((acc, current) => acc.concat(current))
             .reduce((acc, current) => acc.concat(current))
     }
+    
+    splitGen(genoma, neuronioQuantia, entradaQuantia) {
+        return Array(neuronioQuantia).fill().map(_ => genoma.splice(0, entradaQuantia)) 
+    }
 }
 
 class Neuronio extends RNA {
@@ -58,9 +62,8 @@ class Neuronio extends RNA {
         this._pesos = valor || [0]
     }
 
-    saida(callback) {
-        if (!callback) return this.calcular(this._pesos, this._entradas, this._vies)
-        if (typeof callback === 'function') return callback(this.calcular(this._pesos, this._entradas, this._vies))
+    saida(callback = value => value) {
+        return callback(this.calcular(this._pesos, this._entradas, this._vies))
     }
 }
 
