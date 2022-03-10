@@ -90,6 +90,8 @@ const genConcat = (...neuronios) => {
         .reduce((acc, current) => acc.concat(current))
 }
 
+const splitGen = (genoma, neuronioQuantia, entradaQuantia) => Array(neuronioQuantia).fill().map(_ => genoma.splice(0, entradaQuantia))
+
 module.exports = {
     entradas,
     mutar,
