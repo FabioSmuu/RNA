@@ -13,15 +13,16 @@ Aqueles que preferirem, agora este modulo possui uma [index_classVersion](/RNA/i
 
 #### Funções para a criação da Rede:
 - [RNA.entradas(\<array de entradas>)](/RNA/index.js#L45) ~ Cria um objeto representando um neurônio.
-- [RNA.neuronios(\<array de entradas>, quantia)](/RNA/index.js#L79) ~ Cria uma camada de neurônios de mesma entrada.
+- [RNA.neuronios(\<array de entradas>, \<quantia\>)](/RNA/index.js#L79) ~ Cria uma camada de neurônios de mesma entrada.
 - [RNA.setPesos(\<array de neuronios>, \<array de pesos>)](/RNA/index.js#L84) ~ Rescreve os pesos da cama especifica.
-- [RNA.saidas(\<array de neuronios>, \<callback ou função de ativação>, quantia)](/RNA/index.js#L80) ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
+- [RNA.saidas(\<array de neuronios>, \<callback ou função de ativação>, \<quantia\>)](/RNA/index.js#L80) ~ Retorna uma quantia de saídas de acordo com os neurônios de entradas.
 - [RNA.genConcat(\<spreed de neuronios>)](/RNA/index.js#L87) ~ Concatena os pesos para gerar o genoma.
+- [RNA.splitGen(\<aray de gens\>, \<quantia de neuronio\>, \<quantia de entradas\>)](/RNA/index.js#L93) ~ Separa os gens do genoma conforme as informações dadas.
 
 
 #### Funções para a manipulação de genoma:
-- [RNA.crossover(\<array de pesos>, \<array de pesos>, indice de deslocamento)](/RNA/index.js#L74) ~ Junta dois genomas resultando em genomas semelhantes.
-- [RNA.mutar(\<array de pesos>, quantia de mutação)](/RNA/index.js#L65) ~ Altera uma quantia desejada de pesos em um genoma.
+- [RNA.crossover(\<array de pesos>, \<array de pesos>, \<indice de deslocamento\>)](/RNA/index.js#L74) ~ Junta dois genomas resultando em genomas semelhantes.
+- [RNA.mutar(\<array de pesos>, \<quantia de mutação\>)](/RNA/index.js#L65) ~ Altera uma quantia desejada de pesos em um genoma.
 - [RNA.Softmax(\<array de pesos>)](/RNA/index.js#L40) ~ Faz o tratamento do genoma para "treinar a rede".
 
 
