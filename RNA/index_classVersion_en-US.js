@@ -57,7 +57,7 @@ class Neuron extends RNA {
     }
 
     set weight(value) {
-        this._weight = value || []
+        this._weight = value || [0]
     }
 
     output(callback = value => value) {
