@@ -25,8 +25,8 @@ const Pipe = (valor, ...fns) => fns.reduce((acc, current) => acc = current(valor
 */ 
 
 //Função interna
-const calcular = (pesos, entradas, vies = false) => {
-    const result = pesos.map((peso, i) => entradas[i] * peso + (!vies ? 0 : vies[i]))
+const calcular = (pesos, entradas, vies = []) => {
+    const result = pesos.map((peso, i) => entradas[i] * peso + (vies[i] || 0))
     return result.reduce((acc, current) => acc + current)
 }
 
@@ -44,11 +44,11 @@ const Softmax = genoma => {
 
 const entradas = entradas => {
     let pesos = randpesos(entradas) || [0]
-    let vies = false
+    let vies = []
     return {
         vies: {
             get: () => vies,
-            set: (valor) => vies = valor || false
+            set: (valor) => vies = valor || []
         },
         pesos: {
             get: () => pesos,
