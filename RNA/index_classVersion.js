@@ -1,8 +1,8 @@
 class RNA {
     constructor() {}
 
-    calcular(pesos, entradas, vies = 0) {
-        const result = pesos.map((peso, i) => entradas[i] * peso + vies)
+    calcular(pesos, entradas, vies = false) {
+        const result = pesos.map((peso, i) => entradas[i] * peso + (!vies ? 0 : vies[i]))
         return result.reduce((acc, current) => acc + current)
     }
 
@@ -43,7 +43,6 @@ class Neuronio extends RNA {
     constructor(entradas) {
         super()
         this._entradas = entradas
-        this._vies = 0
         this._pesos = this.randpesos(this._entradas) || [0]
     }
 
@@ -52,18 +51,18 @@ class Neuronio extends RNA {
     }
 
     set vies(valor) {
-        this._vies = valor || 0
+        this._vies = valor || false
     }
      get pesos() {
         return this._pesos
     }
 
     set pesos(valor) {
-        this._pesos = valor || [0]
+        this._pesos = valor || []
     }
 
     saida(callback = value => value) {
-        return callback(this.calcular(this._pesos, this._entradas, this._vies))
+        return callback(this.calcular(this._pesos, this._entradas, this._vies = false))
     }
 }
 
