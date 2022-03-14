@@ -1,6 +1,4 @@
 class RNA {
-    constructor() {}
-
     calcular(pesos, entradas, vies = false) {
         const result = pesos.map((peso, i) => entradas[i] * peso + (!vies ? 0 : vies[i]))
         return result.reduce((acc, current) => acc + current)
@@ -67,10 +65,6 @@ class Neuronio extends RNA {
 }
 
 class Genetica extends RNA {
-    constructor() {
-        super()
-    }
-
     softmax(genoma) {
         const gens = genoma.map(x => Math.exp(x - Math.max(...genoma)))
         return gens.map(y => y / gens.reduce((acc, current) => acc + current))
