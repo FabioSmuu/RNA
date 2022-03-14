@@ -1,6 +1,4 @@
 class RNA {
-    constructor() {}
-
     calc(weight, inputs, bias = false) {
         const result = weight.map((w, i) => inputs[i] * w + (!bias ? 0 : bias[i]))
         return result.reduce((acc, current) => acc + current)
@@ -67,10 +65,6 @@ class Neuron extends RNA {
 }
 
 class Genetics extends RNA {
-    constructor() {
-        super()
-    }
-
     softmax(genome) {
         const gens = genome.map(x => Math.exp(x - Math.max(...genome)))
         return gens.map(y => y / gens.reduce((acc, current) => acc + current))
