@@ -2,8 +2,8 @@ class RNA {
     constructor() {}
 
     calc(weight, inputs, bias = 0) {
-        const result = weight.map((w, i) => w * inputs[i])
-        return result.reduce((acc, current) => acc + current) + bias
+        const result = weight.map((w, i) => inputs[i] * w + bias)
+        return result.reduce((acc, current) => acc + current)
     }
 
     randWeight(...inputs) {
