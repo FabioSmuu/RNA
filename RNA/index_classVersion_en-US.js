@@ -1,6 +1,6 @@
 class RNA {
-    calc(weight, inputs, bias = false) {
-        const result = weight.map((w, i) => inputs[i] * w + (!bias ? 0 : bias[i]))
+    calc(weight, inputs, bias = []) {
+        const result = weight.map((w, i) => inputs[i] * w  + (bias[i] || 0))
         return result.reduce((acc, current) => acc + current)
     }
 
@@ -41,6 +41,7 @@ class Neuron extends RNA {
     constructor(inputs) {
         super()
         this._inputs = inputs
+        this._bias = []
         this._weight = this.randWeight(this._inputs) || [0]
     }
 
@@ -49,7 +50,7 @@ class Neuron extends RNA {
     }
 
     set bias(value) {
-        this._bias = value || false
+        this._bias = value || []
     }
      get weight() {
         return this._weight
@@ -60,7 +61,7 @@ class Neuron extends RNA {
     }
 
     output(callback = value => value) {
-        return callback(this.calc(this._weight, this._inputs, this._bias = false))
+        return callback(this.calc(this._weight, this._inputs, this._bias))
     }
 }
 
