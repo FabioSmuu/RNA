@@ -26,8 +26,8 @@ const Pipe = (valor, ...fns) => fns.reduce((acc, current) => acc = current(valor
 
 //Função interna
 const calcular = (pesos, entradas, vies = 0) => {
-    const result = pesos.map((peso, i) => peso * entradas[i])
-    return result.reduce((acc, current) => acc + current) + vies
+    const result = pesos.map((peso, i) => entradas[i] * peso + vies)
+    return result.reduce((acc, current) => acc + current)
 }
 
 //Função interna
