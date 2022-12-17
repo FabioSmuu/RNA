@@ -61,4 +61,4 @@ Funções de ativação concluidas:
 - [Exemplo 2](/exemplo-2.js) ~ Demonstração das funções de agrupamento.
 
 
-##### Obrigado pela atençãp!
+##### Obrigado pela atenção!
