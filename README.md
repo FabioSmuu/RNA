@@ -1,6 +1,6 @@
 # Repositório de um Modulo RNA(Rede neural artificial) com algorítimo genético.
 
-**NOTA**: Vou tirar um tempo para refatorar e deixar este repositório bobito ainda (apenas o ignore)
+**NOTA**: Vou tirar um tempo para refatorar e deixar este repositório bonito ainda (apenas o ignore)
 
 > Este modulo se trata de uma "forma prática" de criar uma RNA de forma simples e rápida usando javascript puro.
 > Ainda não possui uma estrutura ou conversão de dataset usados em frameworks famoso, mas pretendo desenvolver.
